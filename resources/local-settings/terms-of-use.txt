@@ -1,0 +1,427 @@
+<p><strong>TERMS OF USE</strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">These terms of use apply between you, the User of this Website and its services, and UnrealShop. These terms serve as a public offer to any individual to enter into an agreement with the Operator under the existing conditions given in the offer.</span></p>
+<p><span style="font-weight: 400;">Your agreement to comply with and be bound by these terms of use, including all attachments to these terms, is deemed to occur upon creating a user&rsquo;s account on the Website. If you do not agree to be bound by these terms of use, you should stop using the Website immediately.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">You must be at least 16 years of age to use this Website. By using the Website and agreeing to these terms of use, you represent and warrant that you are at least 16 years of age.</span></p>
+<p>&nbsp;</p>
+<p><strong>CONTENTS</strong></p>
+<p>&nbsp;</p>
+<p><span style="font-weight: 400;">The text of these Terms includes three chapters:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">General Terms</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Terms for Customers</span></li>
+<li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Terms for Authors</span></li>
+</ol>
+<p><span style="font-weight: 400;">The provisions of General Terms should apply, except as otherwise stated in the chapters &ldquo;Terms for Customers&rdquo; and &ldquo;Terms of Authors&rdquo;.</span></p>
+<p>&nbsp;</p>
+<p><strong>GENERAL TERMS</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Definitions</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><strong>Website - </strong><a href="http://www.unreal.shop"><span style="font-weight: 400;">www.unreal.shop</span></a><span style="font-weight: 400;">&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Services - </strong><span style="font-weight: 400;">Website&rsquo;s tools, online facilities and other features provided to User under these Terms of use.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Content - </strong><span style="font-weight: 400;">any materials available through the Website, including (but not limited to) Models, images, Users&rsquo; posts, comments, articles, etc.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">&ldquo;UnrealShop&rdquo;, </span><strong>&ldquo;We&rdquo;, &ldquo;Us&rdquo;, &ldquo;Our&rdquo; - </strong><span style="font-weight: 400;">owner and operator of the Website (здесь также стоит прописать юридические данные о компании).</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>User, &ldquo;You&rdquo; - </strong><span style="font-weight: 400;">individual who has reached the age of at least 16 (sixteen) years old and created an Account under these Terms of use.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Author - </strong><span style="font-weight: 400;">user who has uploaded at least one Model to the Website database under Terms for Authors.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Customer - </strong><span style="font-weight: 400;">user who intends to purchase or has already purchased a Model under Terms for Customers.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Model - </strong><span style="font-weight: 400;">digital files in 3D format, including associated scripts, textures and other materials intended for use by Customers under this Terms of Use.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Work - </strong><span style="font-weight: 400;">copyrighted work based upon Model, either superficially or substantially modified, and other copyrighted works.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Intellectual Property Rights - </strong><span style="font-weight: 400;">copyright, patents, trademarks, service marks, topography rights, trade secrets, know-how and other intellectual and industrial property rights worldwide.</span></li>
+<li style="font-weight: 400;" aria-level="2"><strong>Applicable Law - </strong><span style="font-weight: 400;">the law of England and Wales that governs these Terms of use.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Acceptable Use</strong></li>
+</ul>
+<p><span style="font-weight: 400;">The Website and its services can be used:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">to retrieve, display and view the Content;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">to share, upload the Content pursuant to these Terms of use and the Content policy;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">to download and store the Content in electronic form on a disk (your computer or any other device).</span></li>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Prohibited use</strong></li>
+</ul>
+<p><span style="font-weight: 400;">The Website and its services may not be used for any of the following purposes:</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">in any way which causes, or may cause, damage to the Website or interferes with any other person's use or enjoyment of the Website;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">in any way which is harmful, unlawful, illegal, abusive, harassing, threatening or otherwise objectionable or in breach of any Applicable Law, regulation, or governmental order;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">making, transmitting or storing electronic copies of Content in violation of these Terms and the Content policy.</span></li>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>User&rsquo;s Account</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">You must ensure that the data provided by you upon creating an account or at any time is correct and complete.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">You must inform us immediately of any changes to the information that you provide when creating an account by updating your personal data to ensure we can communicate with you effectively.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">We may cancel or suspend your account for any reasonable purposes or if you breach these Terms of use or the Content Policy.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">You may cancel or suspend your account at any time via email (see Contacts). If you do so, you must immediately stop using the Website and its services.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Cancellation of your account results in termination of the agreement.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Password and security</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">When you create an account on this Website, you create a password, which you should keep confidential and not disclose or share with anyone.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">If we determine that there is or is likely to be any misuse of the Website or breach of security, we may require you to change your password or suspend your account.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>External links</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">This Website may contain links to other sites. These sites are not under the control of UnrealShop.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">We assume no responsibility for the content of such Websites and disclaim liability for any and all forms of loss or damage arising out of the use of them.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The inclusion of a link to another site on this Website does not imply any endorsement of the sites themselves or of those in control of them.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Availability of the Website&nbsp;</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Services (including online facilities, tools) or information that is made available through the Website are provided "as is" and on an "as available" basis. We give no warranty that the Services will be free of defects and/or faults. To the maximum extent permitted by the law, we provide no warranties (express or implied) of fitness for a particular purpose, accuracy of information, compatibility and satisfactory quality.&nbsp;&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop is under no obligation to update information on the Website.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">While UnrealShop&nbsp; makes a reasonable effort to ensure that the Website is secure and free of errors, viruses and other malware, we give no warranty or guarantee in that regard and all Users take responsibility for their own security, that of their personal data and their electronic devices.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop accepts no liability for any disruption or non-availability of the Website.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop&nbsp; reserves the right to alter, suspend or discontinue any part (or the whole of) the Website including, but not limited to, any products and/or services available. These terms and conditions shall continue to apply to any modified version of the Website unless it is expressly stated otherwise.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Limitation of liability</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop has no liability to you in respect of any losses arising out of using the Website and its services.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">To the maximum extent permitted by law, UnrealShop accepts no liability for any of the following:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any business losses, such as loss of profits, income, revenue, anticipated savings, business, contracts, goodwill or commercial opportunities;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">loss or corruption of any data, database or software;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any special, indirect or consequential loss or damage.</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Nothing in these terms of use limit or exclude any of our or your liabilities in any way that is not permitted under Applicable Law.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Policies</strong></li>
+</ul>
+<p><span style="font-weight: 400;">The website and its services should be used in accordance with our Content Policy, Private Policy and Cookie Policy. These policies are incorporated in these Terms of use by this reference.</span></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Other provisions</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">All rights, granted to you under these Terms, belong solely to you as long as you have an account and may not be assigned or transferred to any third party. Your account may not be used by any other person.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">These Terms of use together with the Content Policy, Privacy Policy and Cookies Policy contain the whole Agreement between the parties relating to its subject matter and supersede any proposals, prior agreements or any other communication&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop may change these Terms of use from time to time.&nbsp; Such changes apply to the Website and its services from the date of publication. Users should check the Terms of use regularly to make sure they are familiar with the current version. The changes do not apply to licenses that have been obtained by Customers or Unrealshop in accordance with Terms for Customers and Terms for Authors.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">You shall not be entitled to change these Terms of Use.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The Contracts (Rights of Third Parties) Act 1999 shall not apply to these terms and conditions and no third party will have any right to enforce or rely on any provision of these terms and conditions. This provision does not apply to Our assignees, transferees and successors in title.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">No delay or omission in the exercise of any rights, powers or remedies granted to any party by these Terms or Applicable Law in the event of a breach or default by the other party shall limit any such right, power or remedy of such party, not in breach of the agreement.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Failure to enforce any provision of this Agreement shall not be construed as a waiver of any provision or right.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">You shall be responsible for fulfilling tax obligations and the payment of all income tax and other similar charges raised or charged in respect of all monies due to you pursuant to these Terms.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">If a provision of these Terms is or becomes illegal, unenforceable, or invalid in any jurisdiction, it shall not affect the enforceability or validity in that jurisdiction of any other provision of these Terms or the enforceability or validity in other jurisdictions of that or any other provision of these Terms.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Assignment and novation</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">This clause 11.1 constitutes your express consent to any novation of this whole Agreement and any other agreements, documents, warranties, services and facilities related to your User&rsquo;s account and the Website. This clause 11.1 constitutes your express consent that We are entitled to and may assign or transfer to a transferee all or some of our rights, title, interests, benefits, obligations and liabilities under this whole Agreement and any other agreements, documents, warranties, services and facilities related to your User&rsquo;s account and the Website. This clause 11.1 constitutes your express consent that such novation, assignment or transfer may be effected by our delivering to you a notice to that effect whereupon:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">our assigned or transferred rights, title, interests and benefits thereunder shall be transferred to and assumed by the transferee;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the transferee, by virtue of the novation, shall undertake to comply with this Agreement in substitution for Us and undertake to be bound by it in every way as if it had been an original party to it;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">We shall retain all rights, title, interests, benefits, obligations and liabilities not so assigned or transferred;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the transferee shall thereafter be bound by identical rights, title, interests, benefits, obligations and liabilities thereunder which we have assigned or transferred; and</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any acknowledgment, information, authority or right given to Us by you in relation to your User&rsquo;s account, intellectual property, any services and facilities available in accordance with this whole Agreement may be relied and acted upon by the assignee or transferee as if given by you to the assignee or transferee and shall, unless and until revoked or cancelled, apply and have effect in relation thereto.</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">If a competent court or tribunal does not accept clause 11.1 as novating this Agreement, it will be novated pursuant to this clause 11.2. The novation will be on the terms set out in Clause 11.1&nbsp; and will take effect as constituted on the earliest of the following dates accepted by such competent court or tribunal:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you make a subsequent payment under this Agreement;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently upload a Model or its preview to the Website Database;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently download a Model from the Website Database;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently post or comment on the Website;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently provide a notice, related to protection of Intellectual Property Rights;&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently require assistance at Protection of Intellectual Property Rights;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the date on which you subsequently edit or change your User&rsquo;s account data.</span></li>
+</ol>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Contacts</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Should you have any question or provide any notice regarding performance or termination of these Terms of use, you may contact Us by email: </span><a href="mailto:unreal.shop7@gmail.com"><span style="font-weight: 400;">unreal.shop7@gmail.com</span></a><span style="font-weight: 400;">.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Our communication with you regarding this Agreement shall be provided to your email address as set out in your User&rsquo;s account.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<p><strong>TERMS FOR CUSTOMERS</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Access to Models and databases</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In addition to rights, mentioned in clauses 2.1-2.3 of General Terms, Customer may do the following:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">search, view and download Models;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">upload Models to the Website&rsquo;s Database (in this case Terms for Authors are applicable).</span></li>
+</ol>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>License to use the Model</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">When downloading a Model from the Website Database, Customer is granted a non-exclusive, non-transferable worldwide license to use the Model for Permitted Uses for the full period of copyright in it. Permitted Use should be considered any use that is not explicitly prohibited in this chapter.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer obtains no Intellectual Property Rights or copyrights whatsoever in the Model by virtue of this agreement. All Intellectual Property Rights in the Model shall at all times be and remain the property of the Author who has granted UnrealShop the right to sub-license the Model in accordance with the Terms for Authors.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Subject of the Agreement</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer is granted the right to use the Model for commercial and non-commercial purposes.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The Model can be used for different types of Works, including (but not limited to):</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Architecture, Design (architectural rendering; web, landscape or furniture design, etc).</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Physical Creations (prints on posters, T-shirts, souvenirs, practical implementation of an architectural project, etc).</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">3D-printing.</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Games (using a Model as a part of a game for computers, consoles, smartphones and other devices).</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Education (video courses, training, images, etc).</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer may store, print, recreate, edit, modify a Model; use the Model or its 2D images as part of video, films, movies, TV programs, multimedia projects;&nbsp; sell, give, share, distribute, multiply, demonstrate any Work created with the use of the Model, either substantially or superficially modified; perform any other actions on the Model and Work, unless such actions are explicitly prohibited in this chapter (see Prohibited Uses).</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Prohibited Uses</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer may not:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">resell, give, share, sublicence, distribute or multiply the Model on its own, not as a part of a larger Work (this provision also applies to flash drives, hard drives or any other media containing the Model);</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">resell, give, share, sublicence, distribute or multiply renders of the Model on homogeneous background, even in modified version (this provision also applies to flash drives, hard drives or any other media containing such renders);</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">resell, give, share, sublicence, distribute or multiply modifications of the Model on their own, not as a part of a larger Work (this provision also applies to flash drives, hard drives or any other media containing such modifications);</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">distribute, share, or give Works in a way that allows separation or extraction of the Model or its modifications;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">place files containing the Model or its modifications which can be separated or extracted on websites, servers or other digital data carriers from which third parties can download, share or distribute, or make available the Model or its modification in any other way;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">include the Model or its modifications in any database, or catalogue;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">publish or distribute 2D representations containing the Model or its modifications through other marketplaces, such as stock media clearinghouses;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">use the Model, its modifications or 2D representations containing the Model or its modifications as a trademark, service mark or business logo;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">use the Model or its modifications in a way that does not comply with the Applicable Law (for example, to produce Works that contain content propagating hatred or violence).</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Prohibitions to share, give the Model or its modifications do not apply to the following cases:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">when Customer has obtained the license as an employee of a legal entity and shares the Model or its modifications with other employees (Corporate Use);</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">when Customer shares the Model or its modifications with external parties creating the same Work, including its successive versions (Collaborational Use);</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In all the cases, mentioned in clause 15.2, Customer and recipients are responsible for any downstream distribution, use, or misuse of the shared Model or its modifications.&nbsp;</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Pricing and Payment</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer shall pay 1 (one) USD (&ldquo;Price&rdquo;) in order to purchase and download one Model which includes UnrealShop&rsquo;s commission and the License Fee for the right to use the Model. This should not include payment processing fees which may be applicable depending on the chosen method of payment and country.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Methods of payment are set in the Attachment 1 to this agreement.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The relevant Model shall be available for download upon authorisation of the payment.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop allows Customer&rsquo;s purchase to be refunded under the following conditions only:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Customer contacts UnrealShop via Support within _____ days of the purchase;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Customer provides proof that the purchased Model is faulty.</span></li>
+</ol>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Limitation of Liability</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The Model has not been created to meet Customer&rsquo;s individual requirements. Customer is solely responsible to make sure that the Model will meet his requirements prior to entering into this agreement. UnrealShop makes no warranty or representation in that respect and no failure of any part or the whole of the Model to be suitable for Customer&rsquo;s requirements shall entitle Customer not to accept the same or give rise to any right or claim against UnrealShop.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The Models is provided on an &ldquo;as is&rdquo;, &ldquo;as available&rdquo;, and &ldquo;with all faults&rdquo; basis. UnrealShop makes no representations, warranties, conditions, or guarantees as to the usefulness, quality, suitability, truth, fitness for a particular purpose, non-infringement, merchantability, or cosmetic attributes of the Model, and does not guarantee the accuracy or completeness of specifications associated with the Model, including measurements, weight, durability, strength, materials, general physical properties, regulatory compliance, other engineering or construction attributes.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">While UnrealShop makes a reasonable effort to exclude malware from the Model, we cannot ensure such exclusion and no liability is accepted for malware. Thus, you are recommended on receipt to thoroughly scan the Model and insure yourself against any associated risk.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">To the fullest extent permitted by law, UnrealShop shall not be liable to Customer for any costs, expenses, loss or damage (whether direct, indirect or consequential and whether economic or other) arising from exercise of the rights granted to Customer under this agreement.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Indemnity</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer shall indemnify UnrealShop against all liabilities, costs, expenses, damages or losses (including any direct or indirect consequential losses, loss of profit, loss of reputation and all interest, penalties and legal and other professional costs and expenses) suffered or incurred by UnrealShop arising out of or in connection with any breach by Customer of the terms of this agreement.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Termination of the Agreement</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In case of cancellation of the User&rsquo;s account for breach of Terms of use (clause 4.3), all rights granted according to this agreement shall cease.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Customer may terminate this agreement at any time via email (see Contacts). If Customer does so, all rights granted according to this agreement shall cease.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In case of removal of the Model from Website database by UnrealShop or Author, all rights granted according to this agreement shall continue.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<p><strong>TERMS FOR AUTHORS</strong></p>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Access to Models and databases</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In addition to rights, mentioned in clauses 2.1-2.3 of General Terms, Author may do the following:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">search, view and download Models (in this case Terms for Customers are applicable);</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">upload Models to the Website&rsquo;s Database.</span></li>
+</ol>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Acceptance of the Model</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop may moderate, accept or reject an uploaded Model in its sole and absolute discretion. UnrealShop may also remove any accepted Model from the Website at any time at its sole discretion.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Prior to uploading the Model Author shall ensure that the Model meets the requirements of the Content policy and File requirements (Attachment 2), otherwise the Model will not be accepted.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop makes reasonable efforts to give authorship attribution on any use of the accepted Model in the form: &ldquo;[Author] / unreal.shop&rdquo; or &ldquo;unreal.shop&rdquo; in case Author wishes to remain anonymous.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Any inadvertent failure by UnrealShop or any third party to give authorship attribution according to clause 21.3 shall not be considered a breach of this agreement by UnrealShop provided that UnrealShop makes reasonable efforts to remedy any such failure and is not required to incur any legal costs or expenses. Author shall make UnrealShop aware of any such failure as soon as reasonably practicable and on a prospective basis.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author waives in favor of UnrealShop and all its assignees, transferees and successors in title all moral rights in the accepted Model to which Author may be entitled under Applicable Law or other legislation worldwide.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>License to use the Model</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">When uploading a Model to the Website Database, Author grants UnrealShop non-exclusive worldwide license to use the accepted Model for the full period of copyright in it and consents to enable UnrealShop:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">to publish, exhibit, use, modify, store in the Website Database and otherwise exploit the accepted Model or its further modifications whether alone or incorporated in or in conjunction with other works in all formats (including 2D representations) and all media now known, in order to promote the Website within any internal and external advertising and marketing campaigns and, in particular, to sub-license the accepted Model or its further modifications to distributors, contractors and grant such distributors, contractors the right to sub-license the Model to third parties for promoting and marketing the Website;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">to sub-license the accepted Model or its modifications to Customers pursuant to Terms for Customers.</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author grants UnrealShop complete and sole discretion regarding the terms of licensing the accepted Model or its modifications to Customers, distributors, other third parties and understands that UnrealShop does not guarantee that the accepted Model or its modifications will be licensed accordingly.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop obtains no Intellectual Property Rights or copyrights whatsoever in the accepted Model by virtue of this agreement. All Intellectual Property Rights in the Model shall at all times be and remain the property of the Author. UnrealShop acknowledges it has no right to assign any Intellectual Property Rights in the accepted Model.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Undertakings</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author hereby warrants and undertakes that:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Author is the sole owner of the Intellectual Property Rights or copyrights in the Model and has full authority to enter into the agreement;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">no permissions or releases of a third-party are required to grant the license and enable UnrealShop to use the rights under this license without infringing any rights of any third party or</span></li>
+</ol>
+</ol>
+</ol>
+<p><span style="font-weight: 400;">such permissions and releases have been obtained by Author which shall not make UnrealShop liable for any payments to third parties;</span></p>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">granting the license to use the Model pursuant to this agreement fully complies with the Applicable Law and does not infringe any Intellectual Property Rights or any other rights of any third party;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">the Model complies with requirements of Content policy and File requirements (Attachment 2).</span></li>
+</ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author hereby indemnify UnrealShop and shall at all times keep UnrealShop indemnified against all actions, proceedings, costs, claims and damages whatsoever incurred by or awarded against UnrealShop and compensation agreed by UnrealShop in consequence of any breach or non-performance by Author of any of the warranties and undertakings in this agreement.</span></li>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Limitation of Liability</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop shall not be liable to Author for any costs, expenses, loss or damage (whether direct, indirect or consequential and whether economic or other) arising from:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Customer, distributor, contractor or any other third party breaching and/or exceeding the rights granted to them in the accepted Model; and</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any unauthorised access to the Website which is malicious or technologically harmful and results in a breach of Author&rsquo;s Intellectual Property Rights in the accepted Model.</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Notwithstanding the terms of clause 24.1, UnrealShop shall provide Author with a minimum of _______% of any sums it receives from a Customer, distributor or a contractor as a penalty, fee, damages, losses or profits for breaching and/or exceeding the rights granted to it in the accepted Model.</span></li>
+</ol>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li aria-level="1"><strong>Pricing and payment&nbsp;</strong></li>
+</ul>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop has complete and sole discretion regarding all the fees for the access to the Models.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop agrees to pay the Author a License Fee in the amount of 50-70 (fifty to seventy) % of the Price for one Model (clause 16.1).</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The amount of License Fee depends on the Author&rsquo;s rating that is to be defined in accordance with Attachment 3 to this agreement which sets other applicable terms of payment.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Only Author shall bear all the costs related to payment processing fees and currency conversion fees that may occur.&nbsp;</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Upon termination of this agreement, UnrealShop shall pay the Author all the License Fees, earned before the termination date, within ______ Business Days.</span>
+<ul>
+<li aria-level="1"><strong>Protection of Intellectual Property Rights</strong></li>
+</ul>
+<ol>
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Parties shall immediately notify each other on the following matters:</span></li>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any actual or possible infringement of the Intellectual Property Rights in the accepted Model;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any claim made or threatened that the accepted Model infringes the rights of a third party;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">any other claim, charge or action to which the Intellectual Property Rights in the accepted Model may be subject.</span></li>
+</ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop shall be entitled to exercise any rights, powers or remedies granted to it under Applicable Law, the Terms of use or licenses and other agreements with Customers, distributors and contractors in its sole and absolute discretion, including for matters related to protection of Intellectual Property Rights in the accepted Model.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop provides Author assistance in the conduct of any claims or proceedings on his reasonable request and at his cost.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">UnrealShop takes reasonable measures to prevent or stop infringements of Intellectual Property Rights in accordance with Content policy.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author shall bear all the costs of any proceedings and claims and shall be entitled to retain all sums recovered in any action for his own account.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">All the notices, related to protection of Intellectual Property Rights, should be addressed to Support, available in the User&rsquo;s account.</span></li>
+</ol>
+</ol>
+<span style="font-weight: 400;"><span style="font-weight: 400;"><br /></span></span>
+<ul>
+<li aria-level="1"><strong>Termination of the Agreement</strong></li>
+</ul>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author may terminate this agreement at any time via email (see Contacts). If Author does so, all rights granted according to this agreement shall cease, except those mentioned in clause 26.4.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Author may remove the Model from the Website Database anytime. Author does so, all rights granted according to this agreement shall cease, except those mentioned in clause 26.4.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">In case of cancellation of the User&rsquo;s account (clauses 4.3, 4.4), all rights granted according to this agreement shall cease, except those mentioned in clause 26.4.</span></li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">The following rights shall continue:</span>
+<ol>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">UnrealShop&rsquo;s rights to use the accepted Model solely within existing promotional material at the date of termination, in order to promote the Website under clause 22.1.1;</span></li>
+<li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">rights granted by UnrealShop to Customers, distributors and other contractors under licenses to the Model or its modifications before the date of termination.</span></li>
+</ol>
+</li>
+<li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Unless already removed, the accepted Model shall be removed from the Website Database within ____ Business Days of the date of </span></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>

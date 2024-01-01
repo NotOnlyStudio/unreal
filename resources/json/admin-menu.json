@@ -1,0 +1,85 @@
+{
+    "menu": [
+      {
+        "title": "Dashboard",
+        "link": "/admin/",
+        "icon": "bar-chart"
+      },
+      {
+        "title": "Categories",
+        "link": "/admin/categories",
+        "icon": "list-task"
+      },
+      {
+        "title": "Models",
+        "link": "/admin/models",
+        "icon": "box"
+      },
+      {
+        "title": "Users",
+        "link": "/admin/users",
+        "icon": "people"
+      },
+      {
+        "title": "Forum",
+        "link": "/admin/forum",
+        "icon": "layout-text-sidebar-reverse"
+      },
+      {
+        "title": "Challenges",
+        "link": "/admin/challenges",
+        "icon": "triangle-half"
+      },
+      {
+        "title": "Blog",
+        "link": "/admin/blog",
+        "icon": "newspaper"
+      },
+      {
+        "title": "Topics",
+        "link": "/admin/topics",
+        "icon": "chat-left-text"
+      },
+      {
+        "title": "Gallery",
+        "link": "/admin/gallery",
+        "icon": "images"
+      },
+      {
+        "title": "Comments",
+        "link": "/admin/comments",
+        "icon": "chat-left-dots"
+      },
+      {
+        "title": "Reports",
+        "link": "/admin/reports",
+        "type": "reports",
+        "guarded": "ADMIN",
+        "icon": "exclamation-diamond"
+      },
+      {
+        "title": "FAQ",
+        "link": "/admin/faq",
+        "icon": "question-circle",
+        "guarded": "ADMIN"
+      },
+      {
+        "title": "Polytics",
+        "link": "/admin/polytics",
+        "icon": "card-list",
+        "guarded": "ADMIN"
+      },
+      {
+        "title": "Settings",
+        "link": "/admin/settings",
+        "guarded": "ADMIN",
+        "icon": "gear-fill"
+      },
+      {
+        "title": "Logs",
+        "link": "/admin/logs",
+        "guarded": "ADMIN",
+        "icon": "gear-fill"
+      }
+    ]
+  }
