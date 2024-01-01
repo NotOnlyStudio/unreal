@@ -227,8 +227,8 @@
                             <li><a href="/faq">FAQ</a></li>
                         </ul>
                         <div class="d-flex terms  my-2 flex-lg-row flex-md-row flex-column">
-                            <v-footer type="2" name="footer_use" href="#"
-                                      onclick="openTermsPDF('/polytics/terms-of-use')"></v-footer>
+                            <a href="#" onclick="openTermsPDF('/polytics/terms-of-use')">Terms of
+                                use</a>
                             <a href="#" onclick="openTermsPDF('/polytics/pol')" target="_blank">Payment procedure</a>
                             <a href="#" onclick="openTermsPDF('/polytics/privacy-policy')" target="_blank">Privacy
                                 policy</a>
