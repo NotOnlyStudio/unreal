@@ -62,7 +62,34 @@
          -->
 
 
-        <style></style>
+        <style>
+            .language__text {
+                color: #fff !important
+            }
+
+            .language-item img {display: none}
+
+            .language .p-4, .language .py-2  {
+                padding: 0 !important;
+            }
+            .language .grid {
+                display: block !important;
+            }
+            .language .m-4 {
+                margin: 0 !important;
+            }
+
+            .language span {
+                padding: 3px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .banner {
+                margin-top: -40px;
+            }
+        </style>
         <script></script>
 
         <script type="application/ld+json">
@@ -202,15 +229,15 @@
                         @endif
                     </div>
                     <footer>
-                        <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444 | ОГРНИП 31318774600570607 | E-mail: info@arhiteach.com | Телефоны +74957770186</p>
+{{--                        <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444 | ОГРНИП 31318774600570607 | E-mail: info@arhiteach.com | Телефоны +74957770186</p>--}}
                         <script>
                             document.addEventListener('DOMContentLoaded', () => {
                                 const selectedLanguage = localStorage.getItem('lang');
                                 const languageTextElement = document.getElementById('languageText');
 
-                                if (selectedLanguage === 'RU') {
-                                    languageTextElement.textContent = 'ИП Козловский Дмитрий Александрович | ИНН 616601324444 | ОГРНИП 31318774600570607 | E-mail: info@arhiteach.com | Телефоны +78001000984, +74957770186';
-                                }
+                                // if (selectedLanguage === 'RU') {
+                                //     languageTextElement.textContent = 'ИП Козловский Дмитрий Александрович | ИНН 616601324444 | ОГРНИП 31318774600570607 | E-mail: info@arhiteach.com | Телефоны +78001000984, +74957770186';
+                                // }
                             });
                         </script>
                         <ul class="list-unstyled">

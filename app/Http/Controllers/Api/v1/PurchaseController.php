@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Models\WalletUser;
 use Illuminate\Http\Request;
 use App\Models\Purchase;
 use Auth;
@@ -35,15 +36,15 @@ class PurchaseController extends Controller
      */
     public function store(Request $request)
     {
-        if ($purchase) {
-            Auth::user()->increments("models_count", $request->count);
-            return response()->json([
-                "success" => true,
-            ]);
-        }
-        return response()->json([
-            "error" => "Failed transaction"
-        ]);
+//        if ($purchase) {
+//            Auth::user()->increments("models_count", $request->count);
+//            return response()->json([
+//                "success" => true,
+//            ]);
+//        }
+//        return response()->json([
+//            "error" => "Failed transaction"
+//        ]);
     }
 
     /**
@@ -166,7 +167,7 @@ class PurchaseController extends Controller
 //                return (float) $purchase->price;
 //            });
         $subdays = Carbon::now()->subDays(30);
-        $purchases_counts = Purchase::query()
+        $purchases_counts = WalletUser::query()
             ->whereHas('product', function ($query) {
                 return $query->where('user_id', '=', Auth::id());
             })
@@ -176,7 +177,7 @@ class PurchaseController extends Controller
             ])->groupBy('day')
             ->where('created_at', '>=', $subdays)
             ->get()->toArray();
-        $purchases_prices = Purchase::query()
+        $purchases_prices = WalletUser::query()
             ->with("product:id,title,user_id")
             ->whereHas('product', function ($query) {
                 return $query->where('user_id', '=', auth()->user()->getAuthIdentifier());

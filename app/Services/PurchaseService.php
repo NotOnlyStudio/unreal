@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\Models\Purchase;
 use App\Models\Wallet;
+use App\Models\WalletUser;
 use Illuminate\Support\Facades\Log;
 
 class PurchaseService
@@ -15,6 +16,13 @@ class PurchaseService
             "product_id" => $productId,
             "price" => $price,
         ]);
+
+        WalletUser::query()->create([
+            "user_id" => $userId,
+            "product_id" => $productId,
+            "price" => $price,
+        ]);
+
         Log::info("PurchaseService: Совершена покупка для пользователя с ID: {$userId}, продукт ID: {$productId}");
     }
 

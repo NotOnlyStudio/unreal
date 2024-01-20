@@ -45,6 +45,11 @@ class ProductController extends Controller
             $product->where("is_vr", '=',1);
         }
 
+        if ($request->dop == 'lumen')
+        {
+            $product->where("is_light", '=',1);
+        }
+
         if ($request->cat) {
             $product->whereRaw("(FIND_IN_SET($request->cat, category_id) OR FIND_IN_SET($request->cat, subcategory_id))");
         }
@@ -228,6 +233,11 @@ class ProductController extends Controller
         if ($request->filter_free)
         {
             $product->where("is_free", '=',($request->filter_free==2)?0:1);
+        }
+
+        if ($request->filter_free)
+        {
+            $product->where("is_light", '=',($request->filter_lumen==2)?0:1);
         }
 
         $temp = $product->with(["users","userPurchases"])
@@ -450,6 +460,16 @@ class ProductController extends Controller
         ]);
     }
 
+    public function changeLight(Request $request)
+    {
+        Product::query()->where("id",$request->id)->update([
+            "is_light"=>$request->is_light
+        ]);
+        return response()->json([
+            "message"=>"parametr was changed"
+        ]);
+    }
+
     public function adminEdit(Request $request){
         $product = Product::find($request->id);
         $category = Category::find(7);
@@ -610,6 +630,7 @@ class ProductController extends Controller
                     'tags'=>$request->tags,
                     'filename'=>$folder,
                     'is_vr' => $request->vr ? 1 : 0,
+                    'is_light' => $request->lumen ? 1 : 0,
                     'category_id'=> collect($preCat)->unique()->implode(','),
                     'subcategory_id'=>collect($preSub)->unique()->implode(','),
                     'props' => json_encode([

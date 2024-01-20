@@ -18,7 +18,7 @@
 
                         <li>
                             <a class="btn btn-red buy_models" href="https://unreal.arhiteach.com/en/about"
-                               target="_blank00" >About us</a>
+                               target="_blank00">About us</a>
                         </li>
 
                         <!-- v-text="$ml.get('title')"  -->
@@ -33,7 +33,7 @@
                             <a :href="item.href" :class="[ item.type == 'button' ? 'btn btn-red '+item.buttonType : '']"
                                v-text="item.title" v-else>
                             </a>
-                            </li>
+                        </li>
                         <b-dropdown id="dropdown-header" :class="user.photo ? '' : 'text-button'" v-if="user != false">
                             <template #button-content>
                                 <img :src="`/storage/app/public/avatars/${user.photo}`" alt="UserPhoto"
@@ -53,13 +53,15 @@
                         <li v-else>
                             <a href="/login" translate="no" v-text="$ml.get('Account')">Account</a>
                         </li>
-                        <li>
-                            <Translator class="language" :countries="countries" @on-country-click="handleClick"/>
+                        <li @click="handleGlobalClick">
+                            <a href="#" @click="toggleTranslateBlock" id="asdasda">{{ language }}</a>
+
+                            <Translator translate="no" class="language" v-if="showTranslateBlock"
+                                        style="position:absolute; margin-top:10px; background: black; right: 37px"
+                                        :show-image="false" :countries="countries"/>
                         </li>
                     </div>
-
                 </ul>
-
             </nav>
             <button :class="[isMenu ? 'burger active' : 'burger']" @click="isMenu = !isMenu">
                 <span class="burger__line"></span>
@@ -85,17 +87,18 @@ export default {
             countries: [
                 {
                     code: "en|ru",
-                    title: "Russian",
+                    title: "RU",
                     altText: "ruZ"
                 },
 
                 {
                     code: "en|en",
-                    title: "English",
+                    title: "EN",
                     altText: "enZ"
                 },
             ],
-
+            showTranslateBlock: false,
+            language: 'EN'
         }
     },
 
@@ -139,11 +142,6 @@ export default {
 
         window.googleTranslateElementInit = googleTranslateElementInit;
 
-        // window.setInterval(function(){
-            // var lang = $(".goog-te-menu-value span:first").text();
-            // alert(lang);
-        // },5000);
-
         document.querySelectorAll('.language-item').forEach(item => {
             item.addEventListener('click', event => {
                 this.handleClick(event)
@@ -155,6 +153,12 @@ export default {
             var langValue = htmlElement.getAttribute('lang');
             this.$ml.change((langValue === 'ru' ? 'russian' : 'english'))
         }, 2000);
+
+        if (localStorage.getItem('lang') === 'en') {
+            this.language = 'EN'
+        } else {
+            this.language = 'RU'
+        }
     },
 
     methods: {
@@ -173,26 +177,49 @@ export default {
                 )
         },
 
-
-        handleClick(event) {
-            if (event.srcElement.alt === 'руЗ' || event.srcElement.alt === 'ruZ') {
-                this.$ml.change('russian')
-                localStorage.setItem('lang', 'ru')
-                this.$root.$emit('localStorageLangUpdated', 'ru');
-            }
-
-            if (event.srcElement.alt === 'ЭнЦ' || event.srcElement.alt === 'enZ') {
-                this.$ml.change('english')
-                this.$root.$emit('localStorageLangUpdated', 'en');
-                localStorage.setItem('lang', 'en')
-            }
-
+        toggleTranslateBlock() {
+            this.showTranslateBlock = !this.showTranslateBlock;
         },
 
+        async handleGlobalClick(event) {
+            const className = event.target.classList.length > 0 ? event.target.classList[0] : null;
+
+            if (event.target.textContent === 'RU' && className === 'language__text') {
+                this.$ml.change('russian');
+                localStorage.setItem('lang', 'ru');
+                this.$root.$emit('localStorageLangUpdated', 'ru');
+                this.language = 'RU';
+
+                // Обновление текста элемента с id "asdasda" в DOM
+                const element = document.getElementById('asdasda');
+                if (element) {
+                    element.textContent = 'RU';
+                }
+
+                console.log('ru');
+            }
+
+            if (event.target.textContent === 'EN' && className === 'language__text') {
+                this.$ml.change('english');
+                this.$root.$emit('localStorageLangUpdated', 'en');
+                localStorage.setItem('lang', 'en');
+                this.language = 'EN';
+
+                // Обновление текста элемента с id "asdasda" в DOM
+                const element = document.getElementById('asdasda');
+                if (element) {
+                    element.textContent = 'EN';
+                }
+
+                console.log('en');
+            }
+        },
+
+
         // updateLocalStorageLang(newValue) {
-            // localStorage.setItem('lang', newValue);
-            // Вызываем глобальное событие
-            // this.$root.$emit('localStorageLangUpdated', newValue);
+        // localStorage.setItem('lang', newValue);
+        // Вызываем глобальное событие
+        // this.$root.$emit('localStorageLangUpdated', newValue);
         // },
     },
 

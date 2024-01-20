@@ -12,6 +12,8 @@ $user = $user !== null ? $user : 0;
     <title>Was banned</title>
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
+
+
     <script type="text/javascript">
             function googleTranslateElementInit() {
                 new google.translate.TranslateElement(

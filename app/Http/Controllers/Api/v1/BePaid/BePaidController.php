@@ -13,6 +13,7 @@ use App\Models\Payment;
 use App\Models\Purchase;
 use App\Models\User;
 use App\Models\Wallet;
+use App\Models\WalletUser;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Http\JsonResponse;
@@ -85,7 +86,7 @@ class BePaidController extends Controller
         $exchangeResponse = $client->request('GET', "https://api.exchangerate-api.com/v4/latest/{$currency}");
         $exchangeRates = json_decode($exchangeResponse->getBody(), true)['rates'];
 
-        $purchases_counts = Purchase::query()
+        $purchases_counts = WalletUser::query()
             ->whereHas('product', function ($query) {
                 return $query->where('user_id', '=', auth()->user()->getAuthIdentifier());
             })
@@ -103,9 +104,9 @@ class BePaidController extends Controller
         $rateToUSD = $purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1)  ?? 'No rate available';
 
 //
-        if ($purchases_counts[0]['price'] < 10) {
-            return response()->json(['message' => "The minimum payout amount is $10."], 400);
-        }
+//        if ($purchases_counts[0]['price'] < 10) {
+//            return response()->json(['message' => "The minimum payout amount is $10."], 400);
+//        }
 
         if ($rateToUSD == 'No rate available') {
             return response()->json(['message' => $rateToUSD], 400);
@@ -163,7 +164,7 @@ class BePaidController extends Controller
                 'models_count' => 0
             ]);
 
-            Purchase::query()
+            WalletUser::query()
                 ->whereHas('product', function ($query) {
                     return $query->where('user_id', '=', auth()->user()->getAuthIdentifier());
                 })

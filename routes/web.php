@@ -440,6 +440,7 @@ Route::middleware("admin")->group(function(){
     Route::post("/products/fast-edit",[\App\Http\Controllers\Api\v1\ProductController::class,"fastEdit"]);
     Route::post("/product/change-mode",[\App\Http\Controllers\Api\v1\ProductController::class,"changeMode"]);
     Route::post("/product/change-vr",[\App\Http\Controllers\Api\v1\ProductController::class,"changeVR"]);
+    Route::post("/product/change-light",[\App\Http\Controllers\Api\v1\ProductController::class,"changeLight"]);
 
     Route::post("/send-message",[\App\Http\Controllers\MailsController::class,"sendEmail"]);
     //-------

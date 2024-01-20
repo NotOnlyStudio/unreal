@@ -192,17 +192,19 @@ class PaymentsController extends Controller
 
     public function finish_register()
     {
-        $user = Auth::user();
-        $user->stripe_success = 1;
-        $user->save();
-        /**
-         * There was be check logic
-         */
-        return redirect()->route("/cabinet");
+        return 200;
+//        $user = Auth::user();
+//        $user->stripe_success = 1;
+//        $user->save();
+//        /**
+//         * There was be check logic
+//         */
+//        return redirect()->route("/cabinet");
     }
 
     public function transfer(Request $request)
     {
+        return 300;
         $user = Auth::user();
         if (!$user->location) return response()->json([
 //            "answer" => config('errorMessages.mustSpecifyRegion')

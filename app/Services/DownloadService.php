@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\DownloadUser;
 use App\Models\Product;
 use App\Models\Purchase;
 use App\Models\Wallet;

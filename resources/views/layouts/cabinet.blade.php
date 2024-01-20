@@ -1,3 +1,4 @@
+
 @if (Auth::check() && Auth::user()->ban == true)
     <head>
         <meta charset="UTF-8">
@@ -132,7 +133,7 @@
         <report-form v-if="reportWrapper" @close-modal="reportWrapper = false"></report-form>
 
         <footer>
-            <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444</p>
+{{--            <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444</p>--}}
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     const selectedLanguage = localStorage.getItem('lang');

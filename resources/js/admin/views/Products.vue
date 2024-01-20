@@ -174,12 +174,15 @@
                 &nbsp
                 <b-form-select v-model="filterFree" :options="optionsFree"></b-form-select>
                 &nbsp
+                <b-form-select v-model="filterLumen" :options="optionsLumen"></b-form-select>
+                &nbsp
                 <b-form-input name="title" :value="this.$route.query.title ? this.$route.query.title : '' "
                               style="width: auto" type="text" placeholder="Enter Title/Tags"/>
                 &nbsp
 
                 <input type="hidden" name="filter_moderate" :value="filterModerate">
                 <input type="hidden" name="filter_free" :value="filterFree">
+                <input type="hidden" name="filter_lumen" :value="filterLumen">
                 <b-button type="submit" class="mx-2">Search</b-button>
             </div>
 
@@ -197,6 +200,7 @@
             <th>Moderate</th>
             <th>VR</th>
             <th>Free</th>
+            <th>Lumen</th>
             <th>Change user</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -244,6 +248,15 @@
                     </b-button>
                 </td>
                 <td>
+                    <b-button
+                        variant="warning"
+                        @click="change_light_mode(key,model.id)"
+                        :class="[model.is_light ? '' :  'disabled-free','free']"
+                    >
+                        Lumen
+                    </b-button>
+                </td>
+                <td>
                     <b-button @click="usersForm(model.id, key)" variant="secondary">
                         <b-icon-person-circle/>
                     </b-button>
@@ -270,7 +283,7 @@
             </tr>
             </tbody>
         </table>
-        {{ init }}
+
         <pagination :limit="4" :data="laravelData" @pagination-change-page="getResults">
             <span slot="prev-nav">&lt; Previous</span>
             <span slot="next-nav">Next &gt;</span>
@@ -322,6 +335,7 @@ export default {
             categoriesList: [],
             filterModerate: this.$route.query.filter_moderate ? this.$route.query.filter_moderate : null,
             filterFree: this.$route.query.filter_free ? this.$route.query.filter_free : null,
+            filterLumen: this.$route.query.filter_lumen ? this.$route.query.filter_lumen : null,
             optionsModerate: [
                 {value: null, text: 'Please select Moderate'},
                 {value: '1', text: 'Moderate'},
@@ -331,6 +345,11 @@ export default {
                 {value: null, text: 'Please select Free'},
                 {value: '1', text: 'Free'},
                 {value: '2', text: 'Pro'},
+            ],
+            optionsLumen: [
+                {value: null, text: 'Please select Lumen'},
+                {value: '1', text: 'Lumen'},
+                {value: '2', text: 'No Lumen'},
             ],
             rendering: false,
             models: [],
@@ -656,6 +675,9 @@ export default {
             let fFree = this.$route.query.filter_free;
             params += fFree ? '&filter_free=' + fFree : '';
 
+            let fLumen = this.$route.query.filter_lumen;
+            params += fLumen ? '&filter_lumen=' + fLumen : '';
+
             axios.get('/products-admin/?page=' + page + params)
                 .then(response => {
                     console.log(response)
@@ -687,6 +709,22 @@ export default {
                 .then(
                     resp => {
                         this.models[key].is_free = !this.models[key].is_free
+                    }
+                )
+        },
+        change_light_mode(key, id) {
+            console.log(this.models[key])
+            // if (this.models[key].is_free) {
+            //     alert('cannot be switched when free is enabled');
+            //     return false;
+            // }
+            axios.post("/product/change-light", {
+                "id": id,
+                "is_light": !this.models[key].is_light
+            })
+                .then(
+                    resp => {
+                        this.models[key].is_light = !this.models[key].is_light
                     }
                 )
         },

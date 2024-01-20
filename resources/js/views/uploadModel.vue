@@ -57,6 +57,7 @@
                                         <div class="d-flex text-gray"><label for="">RTX</label><input type="checkbox" class="form-control mx-2" name="rtx" value="rtx" id=""></div>
                                         <div class="d-flex text-gray mt-2"><label for="">Bake </label><input type="checkbox" class="form-control mx-2" value="bake" name="bake" id=""></div>
                                         <div class="d-flex text-gray mt-2"><label for="">VR </label><input type="checkbox" class="form-control mx-2" value="vr" name="vr" id=""></div>
+                                        <div class="d-flex text-gray mt-2"><label for="">Lumen </label><input type="checkbox" class="form-control mx-2" value="lumen" name="lumen" id=""></div>
                                     </div>
                                 </div>
                                 <br>

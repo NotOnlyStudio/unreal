@@ -156,6 +156,26 @@
                     style="color: #ff8767; font-family: GhothamPro"
                     >PRO</a
                 >
+
+                <a
+                    :href="route + '?dop=lumen'"
+                    class="h6 p-2"
+                    v-if="loca == '?dop=lumen'"
+                    style="
+                        color: #ff8767;
+                        font-family: GhothamPro;
+                        text-decoration: underline;
+                    "
+                >Lumen</a
+                >
+                <a
+                    :href="route + '?dop=lumen'"
+                    class="h6 p-2 text-decoration-none"
+                    v-if="loca != '?dop=lumen'"
+                    style="color: #ff8767; font-family: GhothamPro"
+                >Lumen</a
+                >
+
             </div>
             <div class="cards">
                 <ProductCard
