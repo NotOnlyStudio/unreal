@@ -4,8 +4,13 @@
             <span>{{ score }}</span>
             <span>USD</span>
         </div>
-        <button @click="transferMoney" class="btn btn-red">Transfer</button>
+<!--        <button @click="transferMoney" class="btn btn-red">Transfer</button>-->
+        <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+            Transfer
+        </button>
     </div>
+
+
 </template>
 
 <script>
@@ -19,19 +24,6 @@ export default {
     },
     methods: {
         transferMoney(){
-            let card = prompt('Enter the card number', "");
-            let month = prompt('Enter the expiration month of the card', "");
-            let year = prompt('Enter the expiration year of the card', "");
-
-
-            axios.get('/bepaid/wallet?card=' + card +  '&month=' + month + '&year=' + year)
-                .then(res => {
-                    this.score = 0
-                    alert(res.data.message);
-                })
-                .catch(error => {
-                    alert(error.response.data.message)
-                });
 
         },
     }

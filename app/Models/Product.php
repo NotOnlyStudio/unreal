@@ -24,7 +24,7 @@ class Product extends Model
         'props',
         'filename',
         'is_vr',
-        'is_lumen',
+        'is_light',
     ];
     public function userAssessment(){
         return $this->morphOne(Like::class, 'likeable');

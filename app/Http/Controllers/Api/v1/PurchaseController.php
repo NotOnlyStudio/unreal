@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Models\Wallet;
 use App\Models\WalletUser;
 use Illuminate\Http\Request;
 use App\Models\Purchase;
@@ -175,8 +176,8 @@ class PurchaseController extends Controller
                 DB::raw('SUM(price) as `price`'),
                 DB::raw('DATE(created_at) as day'),
             ])->groupBy('day')
-            ->where('created_at', '>=', $subdays)
             ->get()->toArray();
+
         $purchases_prices = WalletUser::query()
             ->with("product:id,title,user_id")
             ->whereHas('product', function ($query) {
@@ -196,7 +197,7 @@ class PurchaseController extends Controller
                 "purchasesCount" => array_reverse($purchases_counts),
                 "models" => $purchases_prices,
                 "transactions" => \App\Models\Transactions::query()->where("user_id", $user_id)->take(30)->orderBy("created_at", "desc")->get(),
-                "wallet" => \App\Models\Wallet::query()->where("user_id", $user_id)->first()->bill
+                "wallet" => Wallet::query()->where("user_id", $user_id)->first()->bill
             ]);
         } else {
             return view("cabinet.profit", [

@@ -1,4 +1,3 @@
-
 @if (Auth::check() && Auth::user()->ban == true)
     <head>
         <meta charset="UTF-8">
@@ -130,10 +129,11 @@
             @yield("content")
             <challenge-banner></challenge-banner>
         </div>
+        @yield('contentZ')
         <report-form v-if="reportWrapper" @close-modal="reportWrapper = false"></report-form>
 
         <footer>
-{{--            <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444</p>--}}
+            {{--            <p style="color: white" id="languageText">ИП Козловский Дмитрий Александрович | ИНН 616601324444</p>--}}
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     const selectedLanguage = localStorage.getItem('lang');
@@ -190,6 +190,8 @@
         </footer>
     </div>
     <script src="{{asset('js/cabinet.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     </body>
     </html>
 

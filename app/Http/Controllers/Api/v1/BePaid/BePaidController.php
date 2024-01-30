@@ -11,6 +11,7 @@ use App\Http\Controllers\Controller;
 use App\Models\BalanceProject;
 use App\Models\Payment;
 use App\Models\Purchase;
+use App\Models\Transactions;
 use App\Models\User;
 use App\Models\Wallet;
 use App\Models\WalletUser;
@@ -18,6 +19,7 @@ use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
@@ -56,15 +58,13 @@ class BePaidController extends Controller
 
     public function wallet(Request $request, BePaidWalletAction $bePaidWalletAction)
     {
-
-        if (empty($request->input('card')) || !preg_match('/^[0-9]{16}$/', $request->input('card'))) {
-            return response()->json(['message' => 'Invalid card number format'], 400);
-        }
+        $card = str_replace(' ', '', $request->input('cardNumber'));
+        $data = explode('/',str_replace(' ', '', $request->input('expirationDate'))); // 0 - month 1 - year
 
         $getToken = $bePaidWalletAction->handle(
-            $request->input('card'),
-            $request->input('month'),
-            $request->input('year')
+            $card,
+            $data[0],
+            2000 + $data[1]
         );
 
         if (isset($getToken['response']['message'])) {
@@ -94,14 +94,17 @@ class BePaidController extends Controller
                 DB::raw('SUM(price) as `price`'),
                 DB::raw('DATE(created_at) as day'),
             ])->groupBy('day')
-            ->where('created_at', '>=', Carbon::now()->subDays(30))
             ->get();
+
+        if (count($purchases_counts) == 0) {
+            return response()->json(['message' => 'Ваш баланс равен 0'], 400);
+        }
 
 //        return intval($purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1)) ;
 
 //        $user = Wallet::query()->where('user_id', auth()->user()->getAuthIdentifier())->first();
 
-        $rateToUSD = $purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1)  ?? 'No rate available';
+        $rateToUSD = $purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1) ?? 'No rate available';
 
 //
 //        if ($purchases_counts[0]['price'] < 10) {
@@ -116,12 +119,12 @@ class BePaidController extends Controller
         $payload = [
             'amount' => intval($rateToUSD * 100),
             'currency' => $currency,
-            'description' => 'Test transaction ütf',
+            'description' => $this->generateRandomUUID() . rand(),
             'recipient_credit_card' => [
-                'number' => $request->input('card'),
+                'number' => $card,
             ],
             'language' => ($currency === 'RUB') ? 'ru' : 'en',
-            'tracking_id' => $this->generateRandomUUID().rand(),
+            'tracking_id' => $this->generateRandomUUID() . rand(),
         ];
 
         $response = Http::withHeaders([
@@ -133,32 +136,32 @@ class BePaidController extends Controller
 
         $data = $response->json();
 
-
         if (isset($response['response']['message']) or isset($response['transaction']['status']) && $response['transaction']['status'] === 'failed') {
-            \App\Models\Transactions::query()->create([
-                'user_id' => \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier(),
+            Transactions::query()->create([
+                'user_id' => Auth::user()->getAuthIdentifier(),
                 'sum' => $purchases_counts[0]['price'],
                 'status' => 0,
                 'stripe_info' => json_encode([])
             ]);
 
+
             if (isset($response['transaction']['status']) && $response['transaction']['status'] === 'failed') {
-                return response()->json(['message' => $response['transaction']['message']]);
+                return response()->json(['message' => $response['transaction']['message']], 400);
             }
             return response()->json(['message' => $data['response']['message']], 400);
         }
 
         if ($data['transaction']['status'] == 'successful') {
-            \App\Models\Transactions::query()->create([
-                'user_id' => \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier(),
+            Transactions::query()->create([
+                'user_id' => Auth::user()->getAuthIdentifier(),
                 'sum' => $purchases_counts[0]['price'],
                 'status' => 1,
                 'stripe_info' => json_encode([])
             ]);
 
-            Wallet::query()->where("user_id", auth()->user()->getAuthIdentifier())->update([
-                'bill' => 0
-            ]);
+//            WalletUser::query()->where("user_id", auth()->user()->getAuthIdentifier())->update([
+//                'bill' => 0
+//            ]);
 
             User::query()->where('id', auth()->user()->getAuthIdentifier())->update([
                 'models_count' => 0
@@ -168,15 +171,10 @@ class BePaidController extends Controller
                 ->whereHas('product', function ($query) {
                     return $query->where('user_id', '=', auth()->user()->getAuthIdentifier());
                 })
-                ->select([
-                    DB::raw('SUM(price) as `price`'),
-                    DB::raw('DATE(created_at) as day'),
-                ])->groupBy('day')
-                ->where('created_at', '>=', Carbon::now()->subDays(30))
                 ->delete();
 
             return response()->json([
-                'message' => 'You have successfully withdrawn the money ',
+                'message' => 'You have successfully withdrawn the money. The page will be refreshed in 3 seconds',
             ]);
         }
 

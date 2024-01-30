@@ -44,9 +44,9 @@
                         @beforeChange="syncSliders"
                     >
                         <picture v-for="(img,key) in images" :key="key" @click="index = key">
-                            <div v-if="info.is_free == 1" title="Up to three free models per day"
-                                 class="free-banner l-0"><span>Free</span></div>
+                            <div v-if="info.is_free == 1" title="Up to three free models per day" class="free-banner l-0"><span>Free</span></div>
                             <div v-if="info.is_vr == 1" title="VR" class="free-banner l-0"><span>VR</span></div>
+                            <div v-if="info.is_light == 1" title="Lumen" class="free-banner l-0"><span>Lumen</span></div>
                             <source type="image/webp"
                                     :srcset="$imgRoute+'models/user-' + info.users.id + '/' + img | webpAdd"/>
                             <source type="image/png"
@@ -112,6 +112,8 @@
                                       v-if="propsData.rtx ">{{ propsData.rtx ? "RTX" : '' }}</span>
                                 <span class="title col-2 col-md-6"
                                       v-if="info.is_vr ">{{ info.is_vr ? "VR" : '' }}</span>
+                                <span class="title col-2 col-md-6"
+                                      v-if="info.is_light ">{{ info.is_light ? "Lumen" : '' }}</span>
                                 <span class="title col-2 col-md-6"
                                       v-if="propsData.bake ">{{ propsData.bake ? "BAKE" : '' }}</span>
                             </div>

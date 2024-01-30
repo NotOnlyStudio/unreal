@@ -2,11 +2,22 @@
 
 
 use App\Events\PrivateChat;
+use App\Models\WalletUser;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get("/test", function () {
-    return \App\Models\Product::query()->where('id', 49)->update(['user_id' => 6239]);
+    $purchases_counts = WalletUser::query()
+        ->whereHas('product', function ($query) {
+            return $query->where('user_id', '=', auth()->user()->getAuthIdentifier());
+        })
+        ->select([
+            DB::raw('SUM(price) as `price`'),
+        ])
+        ->get();
+    return $purchases_counts;
 });
 
 Route::get('redis-test', function (){
@@ -61,7 +72,7 @@ Route::middleware(["auth"])->group(function(){
     Route::prefix('bepaid')->group(function () {
         Route::get('/store', [\App\Http\Controllers\Api\v1\BePaid\BePaidController::class, 'store']);
         Route::get('getURL', [\App\Http\Controllers\Api\v1\BePaid\BePaidController::class, 'getURL']);
-        Route::get('/wallet', [\App\Http\Controllers\Api\v1\BePaid\BePaidController::class, 'wallet']);
+        Route::post('/wallet', [\App\Http\Controllers\Api\v1\BePaid\BePaidController::class, 'wallet']);
     });
 
     Route::post("/change-location",[\App\Http\Controllers\UserController::class,"changeLocation"]);
