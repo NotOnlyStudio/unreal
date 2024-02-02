@@ -124,6 +124,10 @@ export default {
                                         "variant": "warning "
                                     })
                                 }
+                                if (err.response.status == 409) {
+                                    this.loader = false;
+                                    this.isFree = true;
+                                }
                             }
                         )
                     } else {

@@ -96,21 +96,18 @@ class BePaidController extends Controller
             ])->groupBy('day')
             ->get();
 
+
         if (count($purchases_counts) == 0) {
             return response()->json(['message' => 'Ваш баланс равен 0'], 400);
         }
 
-//        return intval($purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1)) ;
+        $money = 0;
+        for ($i = 0; $i <= count($purchases_counts); $i++) {
+            $money += isset($purchases_counts[$i]['price']) ? round(json_encode($purchases_counts[$i]['price']), 1)  : 0;
+        }
 
-//        $user = Wallet::query()->where('user_id', auth()->user()->getAuthIdentifier())->first();
-
-        $rateToUSD = $purchases_counts[0]['price'] / $exchangeRates['USD'] - ($purchases_counts[0]['price'] / $exchangeRates['USD'] * 0.1) ?? 'No rate available';
-
-//
-//        if ($purchases_counts[0]['price'] < 10) {
-//            return response()->json(['message' => "The minimum payout amount is $10."], 400);
-//        }
-
+        $rateToUSD = round($money, 1) / $exchangeRates['USD'] - (round($money, 1) / $exchangeRates['USD'] * 0.1) ?? 'No rate available';
+//        return response()->json(['message' => $money], 400);
         if ($rateToUSD == 'No rate available') {
             return response()->json(['message' => $rateToUSD], 400);
         }
@@ -139,7 +136,7 @@ class BePaidController extends Controller
         if (isset($response['response']['message']) or isset($response['transaction']['status']) && $response['transaction']['status'] === 'failed') {
             Transactions::query()->create([
                 'user_id' => Auth::user()->getAuthIdentifier(),
-                'sum' => $purchases_counts[0]['price'],
+                'sum' => $money,
                 'status' => 0,
                 'stripe_info' => json_encode([])
             ]);
@@ -154,7 +151,7 @@ class BePaidController extends Controller
         if ($data['transaction']['status'] == 'successful') {
             Transactions::query()->create([
                 'user_id' => Auth::user()->getAuthIdentifier(),
-                'sum' => $purchases_counts[0]['price'],
+                'sum' => $money,
                 'status' => 1,
                 'stripe_info' => json_encode([])
             ]);

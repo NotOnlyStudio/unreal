@@ -1,46 +1,40 @@
-@extends("layouts.cabinet")
-@section("title","Profit")
-@section('errors')
-    @php
+
+<?php $__env->startSection("title","Profit"); ?>
+<?php $__env->startSection('errors'); ?>
+    <?php
         $user = Auth::user();
-    @endphp
-    @if($user->location == null)
+    ?>
+    <?php if($user->location == null): ?>
         <div class="alert alert-warning w-100">
             To receive payments, you must specify the region of residence.
         </div>
-    @endif
-    @if($user->stripe_success != 1 || $user->stripe_account == null)
+    <?php endif; ?>
+    <?php if($user->stripe_success != 1 || $user->stripe_account == null): ?>
         <div class="alert alert-danger w-100">
             To receive payments, you need to go through an additional mini-registration.
             <br>
-            @if($user->location == null)
+            <?php if($user->location == null): ?>
                 But first you must specify the region of residence.
-            @else
+            <?php else: ?>
                 To do this, follow <a href="/stripe/register">this link</a>
-            @endif
+            <?php endif; ?>
         </div>
-    @endif
-    {{-- @if($user->location != null && $user->stripe_account == null)
-       <div class="alert alert-danger w-100">
-          Please fill out the required information.
-          <br>
-          To do this, follow <a href="/stripe/register">this link</a>
-       </div>
-    @endif --}}
-@endsection
-@section("content")
+    <?php endif; ?>
+    
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection("content"); ?>
     <div class="d-flex content-right">
         <div class="container d-flex flex-column">
-            @php
+            <?php
                 $money = 0;
                 for ($i = 0; $i <= count($purchasesCount); $i++) {
                     $money += isset($purchasesCount[$i]['price']) ? round(json_encode($purchasesCount[$i]['price']), 1)  : 0;
                 }
 
-            @endphp
+            ?>
             <div class="d-flex purchases">
-                <purchases-block :models="{{json_encode($models)}}" :summary="{{ $money }}"></purchases-block>
-                <charts :purchases-count="{{json_encode($purchasesCount)}}"></charts>
+                <purchases-block :models="<?php echo e(json_encode($models)); ?>" :summary="<?php echo e($money); ?>"></purchases-block>
+                <charts :purchases-count="<?php echo e(json_encode($purchasesCount)); ?>"></charts>
             </div>
             <p class="block-title mt-4">Withdrawal</p>
             <div class="d-flex withdrawal">
@@ -48,30 +42,30 @@
                 <div class="transfers mx-0">
                     <div class="transfers__header border-standart">
                         <span>date</span>
-                        {{--                        <span>transaction</span> --}}
+                        
                         <span>Status</span>
                         <span>Summary</span>
-                        {{--                        <span>Invoice</span>--}}
+                        
                     </div>
                     <div class="transfers__content border-standart">
-                        @foreach ($transactions as $tr)
+                        <?php $__currentLoopData = $transactions; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tr): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div>
-                                @php
+                                <?php
                                     //                                    $stripe = json_decode($tr->stripe_info);
-                                @endphp
+                                ?>
 
-                                <span>{{date('m.d.Y',strtotime($tr->created_at))}}</span>
-                                {{--                                <span>{{$stripe->transaction}}</span>--}}
-                                <span>{{$tr->status == 1 ? "Payed" : "Error"}}</span>
-                                <span>{{$tr->sum}} USD</span>
-                                {{--                                <span>{{$stripe->invoice}}</span>--}}
+                                <span><?php echo e(date('m.d.Y',strtotime($tr->created_at))); ?></span>
+                                
+                                <span><?php echo e($tr->status == 1 ? "Payed" : "Error"); ?></span>
+                                <span><?php echo e($tr->sum); ?> USD</span>
+                                
                             </div>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
 
 
-                <transfer-block :wallet-score="{{ $money }}"></transfer-block>
+                <transfer-block :wallet-score="<?php echo e($money); ?>"></transfer-block>
             </div>
         </div>
     </div>
@@ -91,7 +85,7 @@
                 </div>
                 <div class="modal-body">
                     <h1 class="m-0">Payout</h1>
-                    <h1 style="color: gray">{{ $money  }}$</h1>
+                    <h1 style="color: gray"><?php echo e($money); ?>$</h1>
 
                     <div class="card">
                         <div class="form-floating mb-3">
@@ -302,8 +296,10 @@
         }
     </script>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('contentZ')
+<?php $__env->startSection('contentZ'); ?>
 
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make("layouts.cabinet", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\Аяз\Desktop\unreal\resources\views/cabinet/profit.blade.php ENDPATH**/ ?>

@@ -100,6 +100,8 @@ class ProductController extends Controller
             $moderation->where("title","LIKE","%".$request->searchBy."%");
         }
 
+        return $moderation->get();
+
         return response()->json($moderation->paginate(6));
     }
 

@@ -214,6 +214,19 @@ Route::get("/logout",function(){
     return redirect()->route("home");
 })->middleware("auth");
 
+//Route::post('/checkbuy/product', function (Illuminate\Http\Request  $request) {
+//    $purchase = \App\Models\Purchase::query()->where([
+//        ['user_id', auth()->user()->getAuthIdentifier()],
+//        ['product_id', $request->input('product_id')]
+//    ])->first();
+//
+//    if ($purchase) {
+//        return $purchase;
+//    } else {
+//        return response()->json(['error' => 'no buy'], 400);
+//    }
+//})->middleware('auth');
+
 Route::get('/register/confirm/{token}', [App\Http\Controllers\Api\v1\AuthController::class,'confirmEmail']);
 Route::get("/confirm-email", function(){
     return view("confirm-email");
