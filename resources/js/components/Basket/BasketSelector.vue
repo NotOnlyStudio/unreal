@@ -16,8 +16,8 @@
                 <b-button type="submit" variant="bordered sm" translate="no" v-text="$ml.get('stripe')">Buy models
                     (STRIPE)
                 </b-button>
-                <button type="button" @click='bepaid("USD")' class="btn btn-bordered sm">Buy models (BEPAID) (USD)</button>
-                <button type="button" @click='bepaid("RUB")' class="btn btn-bordered sm">Buy models (BEPAID) (RUB)</button>
+<!--                <button type="button" @click='bepaid("USD")' class="btn btn-bordered sm">Buy models (BEPAID) (USD)</button>-->
+<!--                <button type="button" @click='bepaid("RUB")' class="btn btn-bordered sm">Buy models (BEPAID) (RUB)</button>-->
             </div>
         </form>
 

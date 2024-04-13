@@ -5,9 +5,9 @@
             <span>USD</span>
         </div>
 <!--        <button @click="transferMoney" class="btn btn-red">Transfer</button>-->
-        <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-            Transfer
-        </button>
+<!--        <button type="button" class="btn btn-red" data-bs-toggle="modal" data-bs-target="#exampleModal" >-->
+<!--            Transfer-->
+<!--        </button>-->
     </div>
 
 
