@@ -1,0 +1,34 @@
+Array
+(
+    [TerminalKey] => 1713381144663DEMO
+    [OrderId] => 1713728194067
+    [Success] => 1
+    [Status] => CONFIRMED
+    [PaymentId] => 4294433750
+    [ErrorCode] => 0
+    [Amount] => 26700
+    [CardId] => 423096046
+    [Pan] => 430000******0777
+    [ExpDate] => 1230
+    [Token] => 0ce102507e130706152b016f7cde5684afa3a8265ba6a593b976437902647bbd
+    [Data] => Array
+        (
+            [screenWidth] => 1920
+            [Email] => nortmuller92@gmail.com
+            [connection_type] => Widget2.0
+            [screenHeight] => 1080
+            [Source] => cards
+            [isMIDSyncEnabled] => 1
+            [accept] => application/json, text/plain, */*
+            [SEND_EMAIL] => Y
+            [javaEnabled] => 
+            [payAction] => 3DS
+            [guid] => efff7009-7b9e-c835-1b32-a4e50cbb59ee
+            [ID] => 2658d43e-8ba3-4b59-b11e-38a3972fd261
+            [colorDepth] => 24
+            [INFO_EMAIL] => nortmuller92@gmail.com
+            [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+            [REDIRECT] => 
+        )
+
+)

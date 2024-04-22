@@ -13,6 +13,7 @@ export default new MLCreate({
             Join: "+ Join",
             Challenges: "Challenges",
             stripe: 'Buy models (STRIPE)',
+            tinkoff: 'Buy models (TINKOFF)',
             support: "Support",
             footer_use: 'Terms of use'
         }),
@@ -23,6 +24,7 @@ export default new MLCreate({
             Join: '+ Присоединиться',
             Challenges: 'Челлендж',
             stripe: 'Купить модели (STRIPE)',
+            tinkoff: 'Купить модели (TINKOFF)',
             support: "Поддержка",
             footer_use: "Условия использования"
         })

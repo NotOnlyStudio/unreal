@@ -30,7 +30,6 @@ class BePaidController extends Controller
     public function getDonate(
         Request                 $request,
         PaymentUpdateUserAction $paymentUpdateUserAction,
-        BalanceUpdateAction     $balanceUpdateAction,
         PaymentUpdateAction     $paymentUpdateAction
     )
     {

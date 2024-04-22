@@ -25,7 +25,7 @@
 <script>
 export default {
   name:"BasketSelector",
-  props:['standartPrice'],
+  props:['standartPrice', 'user-info'],
   data(){
     return{
       rangeValue: 1,

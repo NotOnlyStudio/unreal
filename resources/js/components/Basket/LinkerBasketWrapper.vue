@@ -8,7 +8,7 @@
     padding: 50px;
     border-radius: 30px;">
       <!--            <basket-selector :standart-price="standartPrice" @change-counts="newCount" />-->
-      <basket-selector :standart-price="3" @change-counts="newCount" />
+      <basket-selector :user-info="auth" :standart-price="3" @change-counts="newCount" />
     </div>
     <!-- <payment-form v-if="auth" :counts="counts" :user-info="auth" /> -->
     <!-- <login-form v-else /> -->

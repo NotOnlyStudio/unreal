@@ -3,7 +3,7 @@
     <div v-else class="d-flex payment__wrapper justify-content-center py-4">
         <div class="d-flex flex-column" style="width: 100%;">
 <!--            <basket-selector :standart-price="standartPrice" @change-counts="newCount" />-->
-            <basket-selector :standart-price="3" :course="course" @change-counts="newCount" />
+            <basket-selector :standart-price="3" :course="course" @change-counts="newCount" :auth="auth" />
         </div>
 
         <!-- <payment-form v-if="auth" :counts="counts" :user-info="auth" /> -->

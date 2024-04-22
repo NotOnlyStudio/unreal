@@ -13,14 +13,23 @@
             <input type="range" class="range my-4" @change="sendCounts" min="1" max="1000" step="1" v-model="rangeValue"
                    id="basketRange">
             <div class="d-flex justify-content-end">
-                <b-button type="submit" variant="bordered sm" translate="no" v-text="$ml.get('stripe')">Buy models
-                    (STRIPE)
-                </b-button>
+                <b-button type="submit" variant="bordered sm" translate="no" v-text="$ml.get('stripe')">Buy models (STRIPE)</b-button>
+                <b-button type="button" variant="bordered sm" translate="no" v-text="$ml.get('tinkoff')" @click="tinkoff()">Buy models (Tinkoff)</b-button>
 <!--                <button type="button" @click='bepaid("USD")' class="btn btn-bordered sm">Buy models (BEPAID) (USD)</button>-->
 <!--                <button type="button" @click='bepaid("RUB")' class="btn btn-bordered sm">Buy models (BEPAID) (RUB)</button>-->
             </div>
         </form>
 
+        <form class="payform-tinkoff" name="payform-tinkoff" id="payform-tinkoff">
+            <input class="payform-tinkoff-row" type="hidden" name="terminalkey" value="1713381144663">
+            <input class="payform-tinkoff-row" type="hidden" name="frame" value="false">
+            <input class="payform-tinkoff-row" type="hidden" name="language" value="ru">
+            <input class="payform-tinkoff-row" type="hidden" name="receipt" value="">
+            <input class="payform-tinkoff-row" type="hidden" :value="auth.email" name="email" >
+            <input class="payform-tinkoff-row" type="hidden" name="amount">
+            <input class="payform-tinkoff-row" type="hidden" name="DATA">
+            <!--            <button class="payform-tinkoff-row payform-tinkoff-btn" type="button"  @click="tinkoff()">Оплатить</button>-->
+        </form>
     </div>
 </template>
 
@@ -30,14 +39,14 @@ import {MLBuilder} from 'vue-multilanguage'
 
 export default {
     name: "BasketSelector",
-    props: ['standartPrice', 'course'],
+    props: ['standartPrice', 'course', 'auth'],
     data() {
         return {
             rangeValue: 1,
             csrf: document.querySelector('meta[name="csrf-token"]').getAttribute("content"),
             uuid: '',
             lang: localStorage.getItem('lang'),
-            price: this.rangeValue * this.standartPrice * (this.lang === 'ru' ? this.course : 1) + (this.lang === 'ru' ? "₽" : "$")
+            price: this.rangeValue * this.standartPrice * (this.lang === 'ru' ? this.course : 1) + (this.lang === 'ru' ? "₽" : "$"),
         }
     },
     methods: {
@@ -48,7 +57,6 @@ export default {
         },
 
         bepaid(lang) {
-
             this.uuid = this.generateRandomUUID()
             console.log('false');
             let money = this.rangeValue * this.standartPrice
@@ -84,6 +92,8 @@ export default {
                 })
         },
 
+
+
         generateRandomUUID() {
             return (
                 this.generateRandomString(8) + '-' +
@@ -102,6 +112,42 @@ export default {
             }
             return result;
         },
+
+        tinkoff() {
+            this.uuid = this.generateRandomUUID()
+            let money = this.rangeValue * this.standartPrice
+
+            axios.get('/bepaid/store?uuid=' + this.uuid + '&money=' + money)
+                .then(res => {
+
+                    const TPF = document.getElementById("payform-tinkoff");
+                    const {description, amount,  email, phone, receipt} = TPF;
+                    TPF.querySelector('input[name="amount"]').value = money * 89;
+                    TPF.querySelector('input[name="DATA"]').value = 'ID=' + this.uuid;
+
+
+                    if (receipt) {
+                        TPF.receipt.value = JSON.stringify({
+                            "Taxation": "patent",
+                            "Items": [
+                                {
+                                    "Name": "Оплата",
+                                    "Price": money * 89 * 100,
+                                    "Quantity": this.rangeValue,
+                                    "Amount": money * 89 * 100,
+                                    "PaymentMethod": "full_prepayment",
+                                    "PaymentObject": "service",
+                                    "Tax": "none",
+                                }
+                            ]
+                        });
+
+                    }
+
+
+                    pay(TPF);
+                })
+        }
 
 
     },
@@ -192,4 +238,46 @@ export default {
     border-radius: 50%;
     top: -6px;
 }
+
+.payform-tinkoff {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2px auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 250px;
+}
+.payform-tinkoff-row {
+    margin: 2px;
+    border-radius: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #DFE3F3;
+    padding: 15px;
+    outline: none;
+    background-color: #DFE3F3;
+    font-size: 15px;
+}
+.payform-tinkoff-row:focus {
+    background-color: #FFFFFF;
+    border: 1px solid #616871;
+    border-radius: 4px;
+}
+.payform-tinkoff-btn {
+    background-color: #FBC520;
+    border: 1px solid #FBC520;
+    color: #3C2C0B;
+}
+.payform-tinkoff-btn:hover {
+    background-color: #FAB619;
+    border: 1px solid #FAB619;
+}
+
 </style>

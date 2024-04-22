@@ -91,7 +91,7 @@
             }
         </style>
         <script></script>
-
+        <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
         <script type="application/ld+json">
             @yield("meta")
         </script>
